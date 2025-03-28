@@ -8,5 +8,13 @@ namespace Bank
 {
 	internal abstract class BankingService
 	{
+		Owner owner;
+		public Owner Owner { get => owner; }
+
+		public BankingService(Owner owner)
+		{
+			this.owner = owner;
+		}
 	}
+
 }
